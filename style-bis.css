@@ -26,9 +26,11 @@
 
 
 .container {
+    /* display */
     width: 100%;
     height: 100vh;
     display: flex;
+    /* font-style */
     font-family: var(--roboto);
 }
 
@@ -44,7 +46,6 @@
     background-image: url(./images/nicole.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
     width: 50%;
 }
 
@@ -52,22 +53,30 @@
 /* TITLE */
 
 .presentation__title {
+    /* font-style */
+    letter-spacing: 0.1em;
+    /* display */
     display: flex;
     width: 30%;
+    /* box-model */
     padding: 10% 0 0 6%;
-    letter-spacing: 0.1em;
+
 
 }
 
 .presentation__title--logo {
+    /* display */
     width: 18%;
 }
 
 .presentation__title--txt {
+    /* font-style */
     font-size: 1.5em;
     font-weight: bold;
     text-transform: uppercase;
+    /* display */
     width: 2em;
+    /* box-model */
     margin: 1em 0 0 0.5em;
 }
 
@@ -75,11 +84,13 @@
 /* LAST NEWS */
 
 .last-news {
+    /* display */
     background-color: rgba(128, 128, 128, 0.25);
     width: 80%;
     text-align: end;
     position: relative;
     top: 40%;
+    /* box-model */
     margin: 0 auto;
     padding: 5%;
 }
@@ -87,16 +98,20 @@
 
 
 .last-news__title {
+    /* font-style */
     font-size: 2em;
+    /* box-model */
     padding-bottom: 0.5em;
 }
 
 .last-news__title--italic-txt {
+    /* font-style */
     font-style: italic;
     font-size: 0.5em;
 }
 
 .last-news__txt {
+    /* font-style */
     font-weight: lighter;
 }
 
@@ -104,30 +119,36 @@
 /* INFO */
 
 .footer-info {
+    /* display */
     position: absolute;
     bottom: 3%;
     left: 20%;
 }
 
 .info {
+    /* display */
     display: flex;
 }
 
 .info__plan,
 .info__mentions,
 .info__contact {
+    /* box-model */
     padding-right: 1em;
 }
 
 .info__plan:hover {
+    /* font-style */
     color: var(--team-label);
 }
 
 .info__mentions:hover {
+    /* font-style */
     color: var(--team-label);
 }
 
 .info__contact:hover {
+    /* font-style */
     color: var(--team-label);
 }
 
@@ -138,23 +159,28 @@
 /****************/
 
 .news {
+    /* display */
     width: 50%;
 }
 
 .news__header {
+    /* display */
     width: 100%;
     height: 3em;
     background-color: var(--header-bg);
 }
 
 .news__header-title {
-font-size: 1.5em;
-font-weight: bold;
-padding: 0.5em 0 0 1em;
+    /* font-style */
+    font-size: 1.5em;
+    font-weight: bold;
+    /* box-model */
+    padding: 0.5em 0 0 1em;
 }
 
 /* ARTICLE */
 .news__article {
+    /* display */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,120 +190,140 @@ padding: 0.5em 0 0 1em;
 }
 
 .news__article--bloc {
+    /* display */
     width: 40%;
     border: 1px ridge var(--article-border);
+    /* box-model */
     padding: 2em;
 }
 
 /*label*/
 .news__article--label-news {
+    /* font-style */
     color: var(--white);
     font-family: var(--roboto);
     font-size: 0.65em;
     font-weight: bold;
-
+    /* display */
     width: 3.5em;
     background-color: var(--news-label);
     text-transform: uppercase;
     text-align: center;
-
     border-radius: 3px;
+    /* box-model */
     padding: var(--padding-label);
 }
 
 .news__article--label-work {
+    /* font-style */
     color: var(--white);
     font-family: var(--roboto);
     font-size: 0.65em;
     font-weight: bold;
-
+    /* display */
     width: 3.5em;
     background-color: var(--work-label);
     text-transform: uppercase;
     text-align: center;
-
     border-radius: 3px;
+    /* box-model */
     padding: var(--padding-label);
 }
 
 .news__article--label-team {
+    /* font-style */
     color: var(--white);
     font-family: var(--roboto);
     font-size: 0.65em;
     font-weight: bold;
-
+    /* display */
     width: 3.5em;
     background-color: var(--team-label);
     text-transform: uppercase;
     text-align: center;
-
     border-radius: 3px;
+    /* box-model */
     padding: var(--padding-label);
 }
 
 
 .news__article--title {
+    /* font-style */
     font-weight: bold;
     font-size: 1.5em;
     line-height: 1.5em;
+    /* box-model */
     padding: 1em 0;
 }
 
 .news__article--author {
+    /* display */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .news__article--author-img {
+    /* display */
     width: 10%;
 }
 
 .news__article--author-name {
+    /* font-style */
     font-size: 0.85em;
     font-weight: bold;
+    /* box-model */
     padding-left: 0.5em;
 }
 
 .news__article--author-date {
+    /* font-style */
     font-weight: 100;
     color: var(--clear-grey);
-    
+
 }
 
 .news__article--txt {
+    /* font-style */
     font-size: 0.9em;
     line-height: 1.5em;
+    /* box-model */
     padding: 1em 0;
 }
 
 .news__article--continue-link {
+    /* font-style */
     font-weight: bold;
     color: var(--article-link);
 }
 
 .news__article--continue-link:hover {
+    /* font-style */
     color: var(--article-link-hover);
 }
 
-/* TEST */
+
 
 /* MEDIA QUERIES */
 
-@media (max-width: 520px)  {
+@media (max-width: 520px) {
 
     .container {
+        /* display */
         width: 100%;
         flex-direction: column;
     }
 
     .presentation {
+        /* display */
         width: 100%;
         background-size: 100%;
+        /* box-model */
         padding-bottom: 15em;
     }
 
     .footer-info {
+        /* display */
         bottom: 0;
         left: 0;
         top: 3%;
@@ -285,6 +331,7 @@ padding: 0.5em 0 0 1em;
     }
 
     .news {
+        /* display */
         width: 100%;
     }
 
@@ -293,21 +340,26 @@ padding: 0.5em 0 0 1em;
 @media (min-width: 820px) and (max-width: 900px) {
 
     .container {
+        /* display */
         width: 100%;
         flex-direction: column;
     }
 
     .presentation {
+        /* display */
         width: 100%;
         background-size: 100%;
+        /* box-model */
         padding-bottom: 63em;
     }
 
     .last-news {
+        /* display */
         top: 100%;
     }
 
     .footer-info {
+        /* display */
         position: absolute;
         bottom: 0;
         left: 0;
@@ -316,6 +368,7 @@ padding: 0.5em 0 0 1em;
     }
 
     .news {
+        /* display */
         width: 100%;
     }
 
