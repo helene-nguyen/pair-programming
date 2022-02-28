@@ -1,0 +1,242 @@
+/*****************/
+/* MAIN SELECTOR */
+/****************/
+
+:root {
+    --article-link: #007bff;
+    --article-link-hover: #0056b3;
+    --header-bg: #f9f9f9;
+    --article-border: #eaeaea;
+    --clear-grey: #bbbbbb;
+    --white: #fff;
+    --work-label: #0766F0;
+    --team-label: #DC5E53;
+    --news-label: #98DC62;
+    --font: sans-serif;
+
+}
+
+/*****************/
+/* PRESENTATION */
+/****************/
+
+.container {
+    display: flex;
+}
+
+.presentation {
+    color: var(--white);
+    width: 50%;
+    height: 68em;
+    background-image: url("./images/nicole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* TITLE */
+
+.presentation {
+    margin-top: -3em;
+/*     display: flex;
+    flex-direction: column */;
+}
+
+.presentation__title {
+    display: flex;
+    margin: 10em 0 0 4em;
+
+}
+
+.presentation__title--logo {
+    background-color: black;
+    width: 2em;
+}
+
+.presentation__title--txt {
+    font-size: 1.5em;
+    font-family: var(--font);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 1em;
+    width: 10%;
+}
+
+
+/* LAST NEWS */
+
+.last-news {
+    background-color: rgba(128, 128, 128, 0.25);
+    width: 80%;
+    margin: 0 auto;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    position: relative;
+    top: 17em;
+    
+}
+
+.last-news__title {
+    font-size: 2em;
+}
+
+.last-news__title--italic-txt {
+    font-style: italic;
+    font-size: 0.5em;
+    padding-left: 0.5em;
+}
+
+.last-news__txt {
+    line-height: 1.5em;
+}
+
+
+/* INFO */
+
+.footer {
+    width: 100%;
+
+}
+
+.info {
+    display: flex;
+    position: absolute;
+    left: 25em;
+    bottom: 0%;
+}
+
+.info__plan, .info__mentions, .info__contact {
+    padding-left: 1em;
+}
+
+/*************/
+/* NEWS */
+/****************/
+
+.news {
+    width: 50%;
+    height: 65em;
+    overflow: scroll;
+}
+
+.news__header {
+    background-color: var(--header-bg);
+    padding: 1em;
+
+}
+
+.news__header-title {
+    font-weight: bold;
+    font-size: 1.4em;
+
+
+}
+
+/* ARTICLE */
+.news__article {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.news__article--bloc {
+    width: 40%;
+    height: 26em;
+    border: 1px ridge var(--article-border);
+    padding: 2em;
+}
+
+/*label*/
+.news__article--label-news {
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 0.65em;
+    font-weight: bold;
+
+    width: 3.5em;
+    background-color: var(--news-label);
+    text-transform: uppercase;
+    text-align: center;
+
+    border-radius: 3px;
+    padding: 0.30em 0;
+}
+
+.news__article--label-work {
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 0.65em;
+    font-weight: bold;
+
+    width: 3.5em;
+    background-color: var(--work-label);
+    text-transform: uppercase;
+    text-align: center;
+
+    border-radius: 3px;
+    padding: 0.30em 0;
+}
+
+.news__article--label-team {
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 0.65em;
+    font-weight: bold;
+
+    width: 3.5em;
+    background-color: var(--team-label);
+    text-transform: uppercase;
+    text-align: center;
+
+    border-radius: 3px;
+    padding: 0.30em 0;
+}
+
+
+.news__article--title {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+
+.news__article--author {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.news__article--author-img {
+    width: 1.4em;
+}
+
+.news__article--author-name {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 0.5em;
+
+
+}
+
+.news__article--author-date {
+    font-style: italic;
+    font-weight: 100;
+    color: var(--clear-grey);
+}
+
+.news__article--txt {
+    padding: 1em 0;
+    line-height: 1.5em;
+}
+
+.news__article--continue-link {
+    font-weight: bold;
+    color: var(--article-link);
+}
+
+.news__article--continue-link:hover {
+    color: var(--article-link-hover);
+}
+
+/* TEST */
